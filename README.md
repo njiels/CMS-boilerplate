@@ -1,4 +1,4 @@
-
+```
           *     (      (    (        )                             
    (    (  `    )\ )   )\ ) )\ )  ( /(                (     *   )  
    )\   )\))(  (()/(  (()/((()/(  )\())    (   (      )\  ` )  /(  
@@ -8,7 +8,8 @@
  | (__ | |\/| |\__ \  |  _/|   / | (_) || || || _|  | (__   | |    
   \___||_|  |_||___/  |_|  |_|_\  \___/  \__/ |___|  \___|  |_|    
                                                                    
-                                                                   
+```
+                                                                 
 This is a minimal starter template for [Nuxt 3](https://nuxt.com) + [Pruvious](https://pruvious.com/). It is a simple and clean starting point for building Nuxt applications with Pruvious as the CMS.
 
 # Nuxt Minimal Starter
