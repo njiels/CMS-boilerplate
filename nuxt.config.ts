@@ -2,15 +2,15 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/image', '@nuxt/ui', "pruvious"],
-  // postcss: {
-  //   plugins: {
-  //     '@tailwindcss/postcss': {},
-  //     'autoprefixer': {},
-  //   }
-  // },
-  tailwindcss: {
-    // Options
+  css: ['~/assets/css/main.css'],
+  modules: [
+    '@nuxt/image', 
+    "pruvious"],
+  // Configureer PostCSS om de Tailwind plugin te gebruiken
+  postcss: {
+    plugins: {
+      '@tailwindcss/postcss': {},
+    },
   },
   pruvious: {
     jwt: {

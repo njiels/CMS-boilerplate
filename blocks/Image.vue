@@ -1,7 +1,12 @@
 <template>
   <div class="flex justify-center py-4">
-    <div :class="['w-[' + widthPercentage + '%]']">
-      <PruviousPicture :image="image" :lazy="true" class="image w-full h-auto" />
+    
+    <div :style="{ width: `${widthPercentage}%` }" class="max-w-full">
+      
+      <PruviousPicture :image="image" :lazy="true" class="image-container w-full h-auto">
+        <img :src="image?.src" :alt="image?.alt || 'Afbeelding'" class="w-full h-auto" />
+      </PruviousPicture>
+      
     </div>
   </div>
 </template>
@@ -10,7 +15,8 @@
 import { imageField, numberField } from '#pruvious'
 
 defineProps({
-  // Bestaande afbeelding prop
+  // Bestaande afbeelding prop (geen wijzigingen nodig, is al perfect)
+
   image: imageField({
     minWidth: 1600,
     minHeight: 1600,
@@ -22,7 +28,7 @@ defineProps({
     ],
   }),
 
-  // Nieuwe prop voor de breedte van de afbeelding, weergegeven als slider
+  // Nieuwe prop voor de breedte van de afbeelding
   widthPercentage: numberField({
     label: 'Afbeelding breedte (%)', // Label dat in Pruvious getoond wordt
     description: 'Bepaal de breedte van de afbeelding als een percentage.',
@@ -35,8 +41,6 @@ defineProps({
 })
 </script>
 
-<style>
-.image {
-  width: 100%;
-}
+<style scoped>
+
 </style>
